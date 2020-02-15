@@ -24,6 +24,9 @@
         <th>Title</th>
         <th>Body</th>
         <th>Comments</th>
+         <th>Rating</th>
+        <th>Gender</th>
+        <th>Likes</th>
          <th>Edit</th>
         <th>Delete</th>
       </tr>
@@ -34,6 +37,9 @@
         <td>${l.title}</td>
         <td>${l.body}</td>
         <td>${l.comments}</td>
+         <td>${l.rating}</td>
+        <td>${l.gender}</td>
+        <td>${l.likes}</td>
          <td><button class="btn btn-sm btn-dark"><a href="/JdbcTemplate/edit/${l.id}">Edit</a></button></td>
          <td><button class="btn btn-sm btn-dark"><a href="/JdbcTemplate/delete/${l.id}">Delete</a></button></td>
       </tr>

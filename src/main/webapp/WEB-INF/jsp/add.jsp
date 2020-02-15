@@ -1,4 +1,4 @@
-
+<%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,22 +13,58 @@
 <body>
 
 <div class="container">
-  <form  action="/JdbcTemplate/addblog" method="post">
+   <form:form  action="/JdbcTemplate/addblog" method="post" modelAttribute="blog">
     <div class="form-group">
       <label for="title">Title:</label>
-      <input type="text" class="form-control" id="email" placeholder="Enter title" name="title">
+   
+     <form:input path="title"/>
+     <form:errors path="title"/>
     </div>
     <div class="form-group">
       <label for="body">Body:</label>
-      <input type="text" class="form-control" id="pwd" placeholder="Enter body" name="body">
+   
+    <form:input path="body"/>
+     <form:errors path="body"/>
     </div>
      <div class="form-group">
       <label for="comments">Comments:</label>
-      <input type="text" class="form-control" id="pwd" placeholder="Enter comments" name="comments">
+   
+    <form:input path="comments"/>
+     <form:errors path="comments"/>
+    </div>
+      <div class="form-group">
+      <label for="comments">Like:</label>
+   
+    Yes: <form:checkbox path="likes" value="yes"/>
+    No: <form:checkbox path="likes" value="no"/>
+    Ok: <form:checkbox path="likes" value="ok"/>
+     <form:errors path="likes"/>
+    </div>
+      <div class="form-group">
+      <label for="comments">Gender:</label>
+   
+   Male:  <form:radiobutton path="gender" value="male"></form:radiobutton>
+   Female:  <form:radiobutton path="gender" value="female"></form:radiobutton>
+     <form:errors path="gender"/>
+    </div>
+    
+     <div class="form-group">
+      <label for="comments">Rating:</label>
+   
+      <form:select path="rating">
+      <form:option value="one">1</form:option>
+      <form:option value="one">2</form:option>
+      <form:option value="one">3</form:option>
+      <form:option value="one">4</form:option>
+      <form:option value="one">5</form:option>
+      </form:select>
+     <form:errors path="rating"/>
     </div>
    
     <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+  </form:form>
+  
+ 
 </div>
 
 </body>

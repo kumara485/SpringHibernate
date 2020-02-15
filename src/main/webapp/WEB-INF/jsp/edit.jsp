@@ -27,6 +27,18 @@
       <label for="comments">Comments:</label>
       <input type="text" class="form-control" id="pwd" placeholder="Enter comments" name="comments" value="${data.comments }">
     </div>
+     <div class="form-group">
+      <label for="comments">Rating:</label>
+      <input type="text" class="form-control" id="pwd" placeholder="Enter comments" name="comments" value="${data.rating }">
+    </div>
+     <div class="form-group">
+      <label for="comments">Gender:</label>
+      <input type="text" class="form-control" id="pwd" placeholder="Enter comments" name="comments" value="${data.gender }">
+    </div>
+     <div class="form-group">
+      <label for="comments">Likes:</label>
+      <input type="text" class="form-control" id="pwd" placeholder="Enter comments" name="comments" value="${data.likes }">
+    </div>
    
     <button type="submit" class="btn btn-primary">EDIT</button>
   </form>

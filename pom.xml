@@ -25,6 +25,23 @@
     <artifactId>spring-jdbc</artifactId>
     <version>5.2.1.RELEASE</version>
 </dependency><!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+<dependency>  
+    <groupId>org.hibernate.validator</groupId>  
+    <artifactId>hibernate-validator</artifactId>  
+    <version>6.0.13.Final</version>  
+</dependency>  
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-orm</artifactId>
+    <version>5.2.1.RELEASE</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.antlr/antlr -->
+<dependency>
+    <groupId>org.antlr</groupId>
+    <artifactId>antlr</artifactId>
+    <version>3.1.1</version>
+</dependency>
 
 <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat -->
 <dependency>
@@ -54,6 +71,30 @@
     <artifactId>servlet-api</artifactId>    
     <version>3.0-alpha-1</version>    
 </dependency>  
+<dependency>
+    <groupId>javax.validation</groupId>
+    <artifactId>validation-api</artifactId>
+    <version>2.0.0.Final</version>
+</dependency>
+<dependency>
+    <groupId>org.hibernate.validator</groupId>
+    <artifactId>hibernate-validator</artifactId>
+    <version>6.0.2.Final</version>
+</dependency>
+<dependency>
+    <groupId>org.hibernate.validator</groupId>
+    <artifactId>hibernate-validator-annotation-processor</artifactId>
+    <version>6.0.2.Final</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-core</artifactId>
+    <version>5.2.9.Final</version>
+</dependency>
+
+
   </dependencies>
   <build>
     <finalName>JdbcTemplate</finalName>
